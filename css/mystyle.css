@@ -1,0 +1,27 @@
+.aa{
+	background: url(../image/nav_bg.png);
+	
+}
+.navbar-header{
+	margin-top: 50px;
+}
+.bb{
+	margin-left:30%;
+	
+}
+#rock-navigation .bb li a{
+	color: #fffef9;
+	font-size: 16px;
+	font-weight: 700;
+}
+/*#rock-navigation .bb li:hover{
+	background-color: #afb4db;
+	
+}*/
+#rock-navigation .bb li:hover a{
+	color:#7bd2db;
+}
+.cc{
+	margin-top: 50px;
+	
+}
