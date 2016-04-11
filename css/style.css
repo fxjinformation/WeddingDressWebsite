@@ -7,7 +7,7 @@ img{ border:none; font-size: 0; display: block; }
 a{ text-decoration: none; color: black; }
 li{ list-style: none; }
 .construct{ width: 100%; position: relative; }
-.container{ width: 96%; margin: 0 auto; position: relative; padding: 0;}
+.container{ width: 100%; margin: 0 auto; position: relative; padding: 0;}
 
 #bg{ width: 100%; height: auto; background:url('../image/03.jpg'); background-size: cover; position: absolute; left:0; top: 0; z-index: 0; overflow:hidden;}
 .bg{width: 100%; height: auto; position: absolute;}

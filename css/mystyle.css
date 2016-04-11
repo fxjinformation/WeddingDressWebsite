@@ -1,24 +1,28 @@
-.aa{
+.nav_bg{
 	background: url(../image/nav_bg.png);
+	width: 100%;
 	
 }
 .navbar-header{
 	margin-top: 50px;
 }
-.bb{
-	margin-left:30%;
+.margin_lr{
+	margin-left:25%;
+	margin-right: 5%;
 	
 }
-#rock-navigation .bb li a{
+.collapse #ul  li a{
 	color: #fffef9;
 	font-size: 16px;
 	font-weight: 700;
 }
-/*#rock-navigation .bb li:hover{
+.collapse #ul .active a{
 	background-color: #afb4db;
-	
-}*/
-#rock-navigation .bb li:hover a{
+	color:#7bd2db;
+}
+
+
+.collapse #ul li:hover a{
 	color:#7bd2db;
 }
 .cc{
