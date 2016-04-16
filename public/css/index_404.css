@@ -1,0 +1,42 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #eeeff4;
+}
+
+
+/*图片长度为：580 * 360*/
+div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -500px;
+	/*保证图片永远在浏览器中间*/
+}
+
+div .timed {
+	color: red;
+	font-size: 20px;
+	font-weight: 600;
+	position: absolute;
+	top: 55%;
+	left: 42%;
+}
+
+div p a {
+	text-decoration: none;
+	color: #333;
+	font-size: 18px;
+	font-weight: 600;
+	position: absolute;
+	top: 60%;
+	left: 45%;
+}
+
+div p a:hover {
+	color: cornflowerblue;
+}

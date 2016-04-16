@@ -1,0 +1,60 @@
+<style type="text" id="adminList">
+<!--<script src="/js/adminList.js" type="text/javascript" charset="utf-8"/>-->
+<script type="text/javascript">
+	$(function(){
+	//增加用户
+	$("#main .panel .glyphicon-plus").click(function(){
+		var html=ejs.render($("#adminAdd").html());
+
+		$.pageChange(html);
+
+	});
+	
+	//删除用户
+	$("#main .panel .glyphicon-trash").click(function(){
+		M.adminDel({"uid":$(this).attr("uid")}).done(function(obj){
+			if(obj.code){
+				M.adminList();
+			}else{
+				$.modal("提示",obj.message);
+			}
+		});
+
+	});
+})
+</script>
+	<div class="panel panel-primary adminList">
+		<div class="panel-heading">管理员列表 <span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span></div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>用户名</th>
+					<th>密码</th>
+					<th>删除</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% users.forEach(function(user){ %>
+					<tr>
+						<td>
+							<%= user.aid %>
+						</td>
+						<td>
+							<%= user.aname %>
+						</td>
+						<td>
+							<%= user.apwd %>
+						</td>
+						<td>
+							<span class="glyphicon glyphicon-trash" aria-hidden="true" uid='<%= user.aid %>' ></span>
+						</td>
+
+					</tr>
+					<%	}) %>
+
+			</tbody>
+		</table>
+	</div>
+	
+</style>

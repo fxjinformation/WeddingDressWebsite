@@ -1,0 +1,258 @@
+﻿/*Style for top menu*/
+.top_menu a {
+	-webkit-transition: all 0.1s ease;
+    -webkit-transition-delay: 0.1s;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+    .top_menu a:hover {
+        color: #000000;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+nav {
+    float: left;
+}
+
+    nav select {
+        display: none;
+    }
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+@media (max-width: 960px) {
+    nav ul {
+        display: none;
+    } 
+
+    nav select {
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+
+.top_menu {
+    background: #cd3a3a;
+    border-bottom: 1px solid#a52727;
+    padding: 0px 0 0px 0;
+    position: fixed;
+   
+    height: 40px;
+    line-height: 40px;
+    z-index:999;
+}
+
+    .top_menu li {
+        display: inline;
+        padding-right: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+
+
+/*Style for "like"*/
+.like {
+    background:url(../image/like.gif) no-repeat;
+    background-position: 0 center;
+    float: right;
+}
+
+    .like a {
+        padding-left: 20px;
+        color: #da4444;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+.like2 {
+    background: url("../img/like2.gif") no-repeat; /*icon heart*/
+    background-position: 0 center;
+    float: right;
+}
+
+    .like2 a {
+        padding-left: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+.like_div {
+    text-align: right;
+
+}
+
+
+/*Images head style*/
+.images_head {
+    background: url(../img/bg.png); /*paste your background link*/
+    background-position-y: center;
+
+	background-attachment: inherit;
+    text-align: center;
+  
+}
+.bg_about {background: url(../img/bg_about.png); height:50%; padding-bottom:100px; -moz-box-shadow: 0px 1px 3px #707070;
+    -webkit-box-shadow: 0px 1px 3px #707070;
+    box-shadow: 0px 1px 3px #707070;}
+.images_slide {
+    width: 100%;
+}
+.about_block {padding-top:3%;}
+
+.bg_bottom {width:100%; height:50px; background:url(../img/bg_bottom.png) no-repeat; background-position:center;}
+/*Pages styles*/
+/*Page tittle*/
+::selection { background: #DD5656; color: #fff; text-shadow: none; }
+::-moz-selection { background: #DD5656; color: #fff; text-shadow: none; }
+.tittle { margin:0px 0px;
+    display:inline-block;
+    padding:0 10px 0 10px;
+  font-size: 48px;
+  font-weight:500;
+    color: #242424;
+    background:#ffffff;
+        text-transform: uppercase;
+}
+.love_badge {
+    text-align: center;
+  
+    padding-bottom: 20px;
+}
+
+.copy {padding-top:40px;
+}
+.page_bg { /* Safari 4-5, Chrome 1-9 */
+    background: #ffffff;
+	background: -moz-linear-gradient(top,#ffffff,#f5f5f5);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ffffff,endColorstr=#f5f5f5,GradientType=0); zoom: 1;
+    background: linear-gradient(top,#ffffff,#f5f5f5);
+    padding: 30px;
+	margin-top:10%;
+    border-radius: 15px;
+    -moz-box-shadow: 0px 1px 3px #707070;
+    -webkit-box-shadow: 0px 1px 3px #707070;
+    box-shadow: 0px 1px 3px #707070;
+}
+.tittle_page {
+    text-align: center;
+    margin-top:20px;
+   
+ 
+    background: url(../image/tittle.png) repeat-x;
+}
+.padding_top_tittle {padding-top:100px;
+}
+.Padding_top {padding-top:500px;
+}
+.fulli_page {
+    height:100%;
+    padding-top:400px;
+    display:inline;
+}
+
+.photo_about {float:left; padding-right:30px; padding-bottom:20px;}
+
+/* news page styles*/
+.news_block {padding-bottom:30px;}
+.data_news {width:44px; height:38px; background:url('../img/news_data.png')no-repeat; float:left; font-size:12px; font-weight:e00; padding:6px 0px 0 5px;color:#000000;}
+.post {text-align:left; padding-left:60px; font-size:12px; line-height:22px;-webkit-transition: all 0.1s ease;
+    -webkit-transition-delay: 0.1s;}
+	.post:hover {text-align:left; padding-left:60px; font-size:12px; color:#bf8988; line-height:22px;-webkit-transition: all 0.1s ease;
+    -webkit-transition-delay: 0.1s;}
+
+/*our story pages*/
+.hobby {padding-top:30px;}
+.avatar {width:44px; height:45px;  float:left; }
+.name_year {padding-left:60px;}
+.age {font-size:14px; color:#cecece; line-height:1px;}
+.story_block {font-size:12px; font-weight:300; line-height:22px;}
+
+.icons_hobby {width:32px; height:32px; float:left;}
+.text_hobby {font-size:12px; line-height:22px; padding-left:60px;-webkit-transition: all 0.1s ease;
+    -webkit-transition-delay: 0.1s;}
+.text_hobby:hover {font-size:12px; line-height:22px; padding-left:60px; color:#bf8988;}
+
+
+/*photos pages styles*/
+.gallery {outline:1px solid#ededed; margin-bottom:30px; box-shadow:0px 2px 3px #e7e7e7; background:#ffffff;-webkit-transition: all 0.2s ease;
+    -webkit-transition-delay: 0.2s;}
+.gallery:hover {outline:1px solid#ff0000; margin-bottom:30px; box-shadow:0px 2px 3px #e7e7e7; background:#ffffff;}
+.gallery_contant { margin:5px;font-size:12px; line-height:22px;}
+.gallery_contant > a > img {width:100%;}
+.like_gallery {padding-top:10px; }
+.like_gallery > .like {float:left;margin-bottom:10px;}
+
+
+.map {background:url(../img/map.png) no-repeat; height:800px;background-position:center 100px;}
+.center {text-align:center;}
+.site {height:100%;}
+
+
+
+.form_message {height:400px; background:#ed5654; margin-top:30px; color:#ffffff;}
+.message_content {margin:10px;}
+
+.form_message_contact {width:95%;}
+
+
+/* slider */
+#slider {
+
+	/* You MUST specify the width and height */
+	width:100%;
+	height:500px;
+	margin:0 auto;
+}
+
+
+
+#gallery {
+	
+	/* Clear the list style */
+	list-style:none;
+	margin:0;
+	padding:0;
+	z-index:0;
+	/* width = total items multiply with #mask gallery width */
+
+}
+
+/*gallery text-box*/
+#mask-excerpt {
+	/* Set the position */
+	position:absolute;	
+	top:38px;
+	
+	z-index:13;
+	/* width should be lesser than #slider width */
+	width:95%;
+	overflow:hidden;	
+}
+#excerpt {
+	/* Clear the list style */
+	list-style:none;
+	margin:0;
+	padding:0;
+	/* Set the position */
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:0;
+	/* Set the style */
+	overflow:hidden;
+	color:#000;	
+}
+#excerpt li {
+	padding:5px;
+
+	font: 12px/1.6em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:#9e9d9d;
+	text-shadow: 0 1px 0 #fff;
+}
+
+    #excerpt > li > img {width:100%;
+    } 

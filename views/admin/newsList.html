@@ -1,0 +1,86 @@
+<style type="text" id="newsList">
+
+<script type="text/javascript">
+	$(function(){
+	
+	$("#main .newsList .glyphicon-plus").click(function(){
+		M.getNewType().done(function(types){
+			var html=ejs.render($("#newsAdd").html(),{types:types});
+			$.pageChange(html);
+		});
+
+	});
+	
+	/*分页*/
+	$("#main .newsList .pagination li:not(.disabled)").click(function(){
+		
+		M.newsList({"curPage":$(this).data("curpage")});
+
+	});
+	/*删除*/
+	$("#main .panel .glyphicon-trash").click(function(){
+		
+		M.newsDel({"typeid":$(this).attr("nid")}).done(function(obj){
+			if(obj.code){
+				M.newsList();
+			}else{
+				$.modal("提示",obj.message);
+			}
+		});
+
+	});
+})
+</script>
+	<div class="panel panel-primary newsList">
+		<div class="panel-heading">资讯列表<span class="glyphicon glyphicon-plus pull-right " aria-hidden="true"></span></div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>标题</th>
+					<th>作者</th>
+					<th>日期</th>
+					<th>类型</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% page.data.forEach(function(newsItem){ %>
+					<tr>
+						<td>
+							<%= newsItem.nid %>
+						</td>
+						<td>
+							<%= newsItem.title %>
+						</td>
+						<td>
+							<%= newsItem.author %>
+						</td>
+						<td>
+							<%= newsItem.time %>
+						</td>
+						<td>
+							<%= newsItem.tid %>
+						</td>
+						<td>
+							<span class="glyphicon glyphicon-trash" aria-hidden="true" nid='<%= newsItem.nid  %>' ></span>
+						</td>
+
+					</tr>
+					<%	}) %>
+
+			</tbody>
+		</table>
+		<div class="col-md-12">
+          <ul class="pagination">
+            <li  data-curpage='<%= page.curPage-1 >=0 ? page.curPage-1:1 %>' class='<%= page.curPage==1 ? "disabled":"active" %>' ><a href="#">上一页</a></li>
+            <% for(var i=1;i<=page.totalPage;i++){ %>
+            	<li data-curpage="<%= i%>" class='<%=page.curPage==i ? 'active' : "" %>' ><a href="#"><%= i%></a></li>
+           <% } %>
+            
+            <li  data-curpage="<%= parseInt( page.curPage)+1<=page.totalPage ? parseInt(page.curPage)+1:page.totalPage %>" class="<%= page.curPage>=page.totalPage ? 'disabled':'active' %>" ><a href="#">下一页</a></li>
+          </ul>
+        </div>
+	</div>
+	
+</style>

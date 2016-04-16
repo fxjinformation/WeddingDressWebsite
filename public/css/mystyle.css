@@ -1,0 +1,46 @@
+
+/*主页面index.html的导航栏和轮播图部分*/
+.nav_bg{
+	background: url(../image/nav_bg.png);
+	
+	/*width: 100%;*/
+	
+}
+.navbar-header{
+	/*margin-top: 50px;*/
+}
+.margin_lr{
+	margin-left:10%;
+	margin-right: 5%;
+	
+}
+.collapse #ul{
+	/*margin-left: 10%;*/
+	
+}
+.collapse #ul  li a{
+	color: #fffef9;
+	/*font-size: 16px;*/
+	font-weight: 700;
+}
+.collapse #ul .active a{
+	background-color: #afb4db;
+	color:#7bd2db;
+}
+
+
+.collapse #ul li:hover a{
+	color:#7bd2db;
+}
+/*作品展示*/
+#enjoy img:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	
+}
+/*场地展示部分*/
+.img_w figure .img_width{
+	width: 100% !important;
+}
+
+
