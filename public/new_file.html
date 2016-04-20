@@ -5,52 +5,58 @@
 		<title>作品展示</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+		
 		<link rel="stylesheet" href="css/works.css" />
 		<link rel="stylesheet" type="text/css" href="css/slideshow_buttontitle.css"/>
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/slideshow_buttontitle.js"></script>
-		<style type="text/css">
+		<!--<style type="text/css">
 			*{margin: 0px;padding: 0px;}
 			img {
 				display: block;
 			}
 			ul li{list-style: none;float: left;}
-		</style>
+		</style>-->
 	</head>
 	<body>
 		<!-- 导航栏开始-->
-		<div class="navbar-wrapper stuckMenu isStuck navbar-fixed-top " style="position: fixed; top: 0px;">
+		<div class="navbar-wrapper stuckMenu isStuck navbar-fixed-top ">
 			<div class="">
 				<div class="navwrapper">
 					<div class="navbar navbar-default navbar-static-top nav_bg">
 						<div class="container">
-							<div class="">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							
+								<button type="button" class="navbar-toggle" style="background-color:beige;margin-top: 50px;" data-toggle="collapse" data-target=".navbar-collapse">
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a href="#"  class="navbar-brand" style="display:inline-block;width:140px;height: 120px;"><img style="width: 100%;height: 100%;" src="image/1.png"/></a>
-							</div>
-							<div class="navbar-collapse collapse ">
-								<ul class="nav navbar-nav navbar-header navbar-header_top  margin_lr" id="ul">
-									<li class="menuItem active"><a href="index.html#home">首页</a></li>
-									<li class="menuItem"><a href="new_file.html">佳品欣赏</a></li>
-									<!--<li class="menuItem"><a href="#updates">风格展示</a></li>-->
-									<li class="menuItem"><a href="#area">独家场景</a></li>
+								
+							<a href="#" ><img src="image/login.png" style="margin: auto;"/></a>
+							<div class="navbar-collapse collapse" >
+								
+								<ul class="nav navbar-nav navbar-header navbar-header_top" id="ul">
+									
+									<li class="menuItem active"><a href="index.html">首页</a></li>
+									<li class="menuItem"><a href="#">佳品欣赏</a></li>
+									<li class="menuItem"><a href="#">独家场景</a></li>
 									<li class="menuItem"><a href="works.html">摄影师</a></li>
 									
-									<li class="menuItem"><a href="#message">最新资讯</a></li>
-									<li class="menuItem"><a href="index.html#wordpress">联系我们</a></li>
+									<li class="menuItem"><a href="news.html">最新资讯</a></li>
+									<li class="menuItem"><a href="#">联系我们</a></li>
 								</ul>
-								<form class="templatemo-search-form visible-lg-inline" role="search">
-									<div id="header_search" class="input-group">
+								
+								<form class="templatemo-search-form navbar-right hidden-xs" role="search">
+									<div class="input-group" style="background-color:white;">
 										<input class="header_search_subm" type="submit" value="">
 										<input class="header_search_text" type="text" name="" id="header_search_text" value="输入搜索内容">
 									</div>
 								</form>
+
 							</div>
 						</div>
 					</div>
@@ -59,7 +65,6 @@
 
 			</div>
 		</div>
-        <!-- 导航栏结束-->
         <!--轮播图开始-->
         <div id="slideshow1" class="slideshow_buttontitle post">
 				<ul>
