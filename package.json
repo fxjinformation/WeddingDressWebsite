@@ -1,0 +1,32 @@
+{
+  "name": "jun",
+  "version": "1.0.0",
+  "description": "this is a xaiojun test form gitbuh the name is jun",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxjinformation/jun.git"
+  },
+  "keywords": [
+    "jun"
+  ],
+  "author": "fengxiaojun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fxjinformation/jun/issues"
+  },
+  "homepage": "https://github.com/fxjinformation/jun#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "log4js": "^0.6.33",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2",
+    "wechat": "^2.0.3"
+  }
+}
